@@ -1,0 +1,134 @@
+div{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selector{
+  padding-top: 40px;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.selector button{
+  font-size: 40px;
+}
+/* 선택된 버튼의 스타일 */
+.selected {
+  color: black; /* 선택된 버튼의 글자색 */
+  text-decoration: underline;
+}
+
+/* 선택되지 않은 버튼의 스타일 */
+.not-selected {
+  color: gray; /* 선택되지 않은 버튼의 글자색 */
+}
+#popular{
+  padding-left: 0px;
+}
+
+ /* 게시글 컨테이너 */
+ .post-container{
+  display: grid;
+  grid-template-columns: repeat(4, 295px); /* 가로 4개 고정 */
+  gap: 20px; /* 카드 간격 */
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1300px; /* 헤더와 동일한 max-width */
+  margin: 0 auto; /* 중앙 정렬 */
+  box-sizing: border-box; 
+  
+  gap: 40px;
+}
+.post-container a{
+
+  max-width: 295px;
+}
+
+
+/* 게시글 카드 */
+.post {
+
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+
+}
+.post h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  white-space: nowrap; /* 한 줄로 표시되도록 설정 */
+  overflow: hidden; /* 넘친 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘친 부분을 ...으로 표시 */
+}
+#first {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  margin-bottom: 1px;
+  margin-top: 0;
+  display: -webkit-box; /* 박스로 처리하여 다중 라인 적용 */
+  -webkit-line-clamp: 3; /* 최대 3줄까지만 표시 */
+  -webkit-box-orient: vertical; /* 수직 방향 설정 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 말줄임표 표시 */
+
+}
+.bottom{
+  padding-top: 1px;
+}
+.post #second{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  padding-top: 1px;
+  color: grey;
+}
+
+.post-footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.post-footer .author {
+  display: flex;
+  align-items: center;
+}
+
+.post-footer .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-footer .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+

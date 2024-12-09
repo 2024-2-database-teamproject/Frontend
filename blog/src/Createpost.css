@@ -1,0 +1,78 @@
+/* CreatePost 컴포넌트 스타일 */
+
+div{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.ful-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create-cont {
+    width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hea {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .fo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .in1, .in2, .tx1, .in3 {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .in1:focus, .in2:focus, .tx1:focus, .in3:focus {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  .tx1 {
+    height: 300px;
+    resize: vertical;
+    white-space: pre-wrap;
+  }
+  
+  .bu {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .bu:hover {
+    background-color: #000000;
+    transform: scale(1.02);
+    
+  }
+  
+  .bu:active {
+    background-color: #000000;
+  }
+  
+
+  

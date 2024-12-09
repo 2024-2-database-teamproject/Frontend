@@ -1,0 +1,125 @@
+
+/* 기본 검색창 스타일 */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 250px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    flex-grow: 1;
+  }
+  
+  /* 검색 모달 */
+/* 검색 모달 */
+.search-modal {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  max-width: 600px;
+  height: 420px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.close-container{
+  padding: 10px;
+}
+/* 닫기 버튼 */
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+/* 검색 결과 영역 (채팅 메시지) */
+.search-results {
+  
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse; /* 최신 메시지가 아래로 */
+  padding: 10px;
+  flex-grow: 1;
+}
+
+/* 채팅 메시지 스타일 */
+.chat-message {
+  max-width: 70%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+/* 사용자 메시지 스타일 */
+.user-message {
+  align-self: flex-end;
+  background-color: #f0f0f0;
+  color: black;
+  
+}
+
+/* 봇 메시지 스타일 */
+.bot-message {
+  align-self: flex-start;
+  background-color: white;
+  color: black;
+}
+
+/* 입력 영역 */
+.search-input-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.search-modal-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: white;
+}
+
